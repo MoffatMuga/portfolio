@@ -10,7 +10,7 @@ import Review from "@/components/ui/Review";
 
 export default function about() {
   return (
-    <div className='mx-auto lg:px-[200px] container '>
+    <div className='mx-auto lg:px-[200px] container px-4'>
       <div className='mt-6 mx-auto space-y-3'>
         <h2 className='text-white text-center text-2xl font-semibold'>
           About<span className='text-main'> .</span>
