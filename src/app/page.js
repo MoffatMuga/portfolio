@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+
 import { FaGithub, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { Button } from "@/components/ui/button";

@@ -5,7 +5,7 @@ import { Button } from './button';
 import { usePathname } from 'next/navigation';
 import { FaLocationArrow } from "react-icons/fa6";
 import Mobile from './Mobile';
-import { Phone } from 'lucide-react';
+
 
 
 const links = [

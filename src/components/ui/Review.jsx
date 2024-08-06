@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+
 
 const reviews = [
     {
