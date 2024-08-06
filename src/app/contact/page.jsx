@@ -1,12 +1,21 @@
+"use client"
 import React from 'react'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { GiEarthAfricaEurope } from "react-icons/gi";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 
 const contact = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 1400 })
+      })
+    
     return (
         <div className='mx-auto lg:px-[200px] container flex flex-col md:justify-between px-4 mb-4'>
             <div className='flex flex-row'>
@@ -44,13 +53,13 @@ const contact = () => {
                 </div>
 
 
-                <div className='w-1/2 hidden md:flex'>
+                <div className='w-1/2 hidden md:flex' data-aos="fade-up-left">
                     <img src='/rafiki.png' />
                 </div>
             </div>
 
 
-            <div className='flex flex-col space-y-3 md:flex-row gap-3 md:gap-6 justify-around mx-auto w-full mt-4'>
+            <div className='flex flex-col space-y-3 md:flex-row gap-3 md:gap-6 justify-around mx-auto w-full mt-4' >
                 <div className='flex flex-col items-center justify-center space-y-3'>
                     <FaLocationDot className='text-3xl text-main' />
                     <span>

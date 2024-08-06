@@ -34,7 +34,7 @@ export default function Header() {
     console.log(pathname)
 
     const handleContactClick = () => {
-        const phoneNumber = '+254721745482'
+        const phoneNumber = '+254715662604'
         const message = 'Hello Muga, Id like you to create me a website ...'
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

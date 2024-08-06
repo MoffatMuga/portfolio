@@ -89,32 +89,27 @@ export default function Review
                         <p className='text-sm'>{review.message}</p>
                     </div>
                     <div>
-                        <p>{review.date}</p>
+                        <p className='text-white'>{review.date}</p>
                     </div>
         
 
                     <div className='flex flex-row items-center gap-2' style={{ flex: `0 0 ${100 / reviewsToShow}%` }}>
                         <img src={review.image} className='rounded-full h-[60px] w-[60px] object-cover border-[1px]' />
 
-                        <span>
+                        <span className='text-main'>
                         {review.name}
                         </span>
                     </div>
                 </div>
             ))}
 
-            {/* <button className="hidden md:absolute top-1/2 transform -translate-y-1/2 lg:left-4 left-0 bg-gray-800 text-white p-2" onClick={prevReview}>
-                <RiArrowLeftSLine />
-            </button>
-            <button className="hidden md:absolute top-1/2 transform -translate-y-1/2 lg:right-4 right-0 bg-gray-800 text-white p-2" onClick={nextReview}>
-                <RiArrowRightSLine />
-            </button> */}
+          
 
             <div className="mt-[280px] absolute items-bottom">
                 {Array.from({ length: Math.ceil(reviews.length / reviewsToShow) }).map((_, index) => (
                     <span
                         key={index}
-                        className={`inline-block w-4 h-4 mx-2 rounded-full ${currentReview === index ? 'bg-main' : 'bg-primary'} cursor-pointer`}
+                        className={`inline-block w-2 h-2 mx-2 rounded-full ${currentReview === index ? 'bg-main' : 'bg-primary'} cursor-pointer`}
                         onClick={() => goToNextReview(index)}
                     ></span>
                 ))}
