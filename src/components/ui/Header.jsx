@@ -5,6 +5,7 @@ import { Button } from './button';
 import { usePathname } from 'next/navigation';
 import { FaLocationArrow } from "react-icons/fa6";
 import Mobile from './Mobile';
+import { Phone } from 'lucide-react';
 
 
 const links = [
@@ -20,6 +21,10 @@ const links = [
         name: "projects",
         path: "/projects"
     },
+    {
+        name: "contact",
+        path: "/contact"
+    },
 
 
 ]
@@ -27,6 +32,15 @@ const links = [
 export default function Header() {
     const pathname = usePathname()
     console.log(pathname)
+
+    const handleContactClick = () => {
+        const phoneNumber = '+254721745482'
+        const message = 'Hello Muga, Id like you to create me a website ...'
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        window.location.href = url
+
+    }
 
     return (
         <div className='flex justify-between py-8 container mx-auto px-4 lg:px-[200px]  border-main shadow-md  shadow-main'>
@@ -44,12 +58,13 @@ export default function Header() {
                         </Link>
 
                     ))}
-                    
-                    <Button className='bg-transparent border border-main gap-1 group-hover:text-bg-1 group '>
-                        contact
-                        
-                            <FaLocationArrow className='text-main text-2xl '/>
-                        
+
+                    <Button className='bg-transparent border border-main gap-1 hover:text-bg-1 group ' onClick={handleContactClick}>
+                        chat me
+
+                        <FaLocationArrow className='text-main text-2xl group-hover:text-bg-1' />
+
+
                     </Button>
                 </div>
 
