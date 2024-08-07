@@ -46,7 +46,7 @@ export default function Header() {
     return (
         <div className='flex justify-between py-8 container mx-auto px-4 lg:px-[200px]  border-main shadow-md  shadow-main  '>
             <div>
-                <Link href='/' className=' md:text-3xl'>Dev<span className=''>Muga</span></Link>
+                <Link href='/' className=' md:text-3xl'>Dev<span className='text-main'>Muga</span></Link>
             </div>
 
             <div>
