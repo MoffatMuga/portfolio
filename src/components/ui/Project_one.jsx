@@ -7,7 +7,7 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 const contents = [
     {
         name: "solar app",
-        link: "www.facebook.com",
+        link: "https://vercel.com/mugas-projects/solar-spark-app",
         images: ['/solar1.png', '/solar2.png', '/solar3.png']
     },
 ]
