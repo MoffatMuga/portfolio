@@ -33,7 +33,7 @@ export default function Mobile() {
 
     const pathname = usePathname();
   return (
-   <Sheet className='bg:bg-1'>
+   <Sheet >
     <SheetTrigger className='flex justify-center items-center'>
         <CiMenuFries className='text-[32px] text-main'/>
     </SheetTrigger>
