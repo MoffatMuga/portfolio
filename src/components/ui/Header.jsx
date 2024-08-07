@@ -5,6 +5,7 @@ import { Button } from './button';
 import { usePathname } from 'next/navigation';
 import { FaLocationArrow } from "react-icons/fa6";
 import Mobile from './Mobile';
+import ThemeToggle from './ThemeToggle';
 
 
 
@@ -43,17 +44,21 @@ export default function Header() {
     }
 
     return (
-        <div className='flex justify-between py-8 container mx-auto px-4 lg:px-[200px]  border-main shadow-md  shadow-main'>
+        <div className='flex justify-between py-8 container mx-auto px-4 lg:px-[200px]  border-main shadow-md  shadow-main  '>
             <div>
-                <Link href='/' className='text-white md:text-3xl'>Dev<span className='text-main'>Muga</span></Link>
+                <Link href='/' className=' md:text-3xl'>Dev<span className=''>Muga</span></Link>
+            </div>
+
+            <div>
+                <ThemeToggle />
             </div>
             <div className=' hidden md:flex '>
 
-                <div className='space-x-8 text-white'>
+                <div className='space-x-8 '>
 
                     {links.map((item, index) => (
 
-                        <Link key={index} href={item.path} className={`${item.path === pathname && "text-main border-main border-b-2"} capitalize font-medium hover:text-main transition-all`}>
+                        <Link key={index} href={item.path} className={`${item.path === pathname && " border-main border-b-2"} capitalize font-medium hover:text-main transition-all`}>
                             {item.name}
                         </Link>
 

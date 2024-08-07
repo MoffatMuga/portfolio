@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
     @apply bg-bg-1 text-primary
-}
+} */
 
 .slide-in {
     position: fixed;
@@ -71,3 +71,40 @@ body {
       border-color: rgba(255, 255, 255, 0.3);
     }
   }
+
+  /* styles.css */
+:root {
+  --main-color: #000;
+  --background-color: #fff;
+  --primary-color:  #535353;
+  
+}
+
+.dark {
+  --main-color: #fff;
+  --background-color: #212121;
+  --primary-color:  #535353;
+  --secondary-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--main-color);
+}
+
+.light-theme-content {
+  background-color: #fff;
+  color: #131313;
+
+}
+
+.dark-theme-content {
+  background-color: #131313;
+  color: var(--main-color);
+}
+.primary {
+  color: var(--primary-color);
+}
+.secondary {
+  color: var(--secondary-color)
+}

@@ -22,6 +22,15 @@ const links = [
 
 export default function Mobile() {
 
+    const handleContactClick = () => {
+        const phoneNumber = '+254715662604'
+        const message = 'Hello Muga, Id like you to create me a website ...'
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        window.location.href = url
+
+    }
+
     const pathname = usePathname();
   return (
    <Sheet>
@@ -44,7 +53,7 @@ export default function Mobile() {
                         </Link>
 
                     ))}
-                    <Button className='bg-transparent border border-main gap-1'>
+                    <Button className='bg-transparent border border-main gap-1' onClick={handleContactClick}>
                         contact
                         <span className='text-main text-2xl'>
                             <FaLocationArrow />

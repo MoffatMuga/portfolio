@@ -17,32 +17,36 @@ function projects() {
   })
 
   return (
-    <div className='mx-auto md:px-[200px] container  px-4 grid md:grid-cols-3  items-center gap-6 mt-6'>
+    <div className='mx-auto md:px-[200px] flex flex-col md:flex-row container  px-4  mt-6'>
 
-      <div className='border border-primary' data-aos="fade-right">
-       <Project_one />
-      </div>
-      
-      <div className='border border-primary' data-aos="fade-right">
-        <Project_two />
+      <div className='grid md:grid-cols-3  gap-6 items-center justify-cnter  '>
+        <div className='border border-primary flex justify-center ' data-aos="fade-right">
+          <Project_one />
+        </div>
+
+        <div className='border border-primary flex justify-center' data-aos="fade-right">
+          <Project_two />
+        </div>
+
+        <div className='border border-primary flex justify-center' data-aos="fade-right">
+          <Project_three />
+        </div>
+
+        <div className='border border-primary flex justify-center' data-aos="fade-left">
+          <Project_four />
+        </div>
+
+        <div className='border border-primary flex justify-center' data-aos="fade-left">
+          <Project_five />
+        </div>
+
+        <div className='border border-primary flex justify-center' data-aos="fade-left">
+          <Project_six />
+        </div>
       </div>
 
-      <div className='border border-primary' data-aos="fade-right">
-        <Project_three />
-      </div>
 
-      <div className='border border-primary' data-aos="fade-left">
-        <Project_four />
-      </div>
 
-      <div className='border border-primary' data-aos="fade-left">
-        <Project_five />
-      </div>
-
-      <div className='border border-primary' data-aos="fade-left">
-        <Project_six />
-      </div>
-      
     </div>
   )
 }

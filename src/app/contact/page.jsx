@@ -11,41 +11,41 @@ import { useEffect } from "react";
 const contact = () => {
 
     useEffect(() => {
-        AOS.init({ duration: 1400 })
+        AOS.init({ duration: 1000 })
       })
     
     return (
         <div className='mx-auto lg:px-[200px] container flex flex-col md:justify-between px-4 mb-4'>
             <div className='flex flex-row'>
                 <div className="md:w-1/2 w-full flex flex-col justify-center p-8">
-                    <h1 className="text-3xl font-bold mb-8 text-center text-white">Get in touch<span className='text-main'>.</span></h1>
+                    <h1 className="text-3xl font-bold mb-8 text-center primary">Get in touch<span className='text-main'>.</span></h1>
                     <form className="space-y-6">
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
 
-                                <input className="w-full p-3 border-b border-primary outline-none bg-bg-1 text-primary" type="text" id="name" name="name" placeholder="Name" />
+                                <input className="w-full p-3 border-b border-primary outline-none bg-transparent text-primary" type="text" id="name" name="name" placeholder="Name" />
                             </div>
                             <div>
 
-                                <input className="w-full p-3 border-b border-primary outline-none bg-bg-1 text-white" type="text" id="lastName" name="lastName" placeholder="Last name" />
+                                <input className="w-full p-3 border-b border-primary outline-none bg-transparent text-white" type="text" id="lastName" name="lastName" placeholder="Last name" />
                             </div>
                         </div>
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
 
-                                <input className="w-full p-3 border-b border-primary outline-none  bg-bg-1 text-white" type="email" id="email" name="email" placeholder="Email" />
+                                <input className="w-full p-3 border-b border-primary outline-none  bg-transparent text-white" type="email" id="email" name="email" placeholder="Email" />
                             </div>
                             <div>
 
-                                <input className="w-full p-3 outline-none border-b border-primary  bg-bg-1 text-white" type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone number" />
+                                <input className="w-full p-3 outline-none border-b border-primary  bg-transparent text-white" type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone number" />
                             </div>
                         </div>
                         <div>
 
-                            <textarea className="w-full p-3 border-b border-primary outline-none bg-bg-1 text-white" id="message" name="message" placeholder="Message" rows="4"></textarea>
+                            <textarea className="w-full p-3 border-b border-primary outline-none bg-transparent text-white" id="message" name="message" placeholder="Message" rows="4"></textarea>
                         </div>
                         <div className="flex justify-center">
-                            <Button className="hover:text-bg-2 text-white p-3 rounded-lg w-1/2 border border-primary" type="submit">Submit now</Button>
+                            <Button className="hover:text-bg-2 primary p-3 rounded-lg w-1/2 border border-primary" type="submit">Submit now</Button>
                         </div>
                     </form>
                 </div>

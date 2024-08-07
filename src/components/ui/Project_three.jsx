@@ -26,8 +26,8 @@ export default function Project_three() {
     }
     return (
         <div className='flex flex-col p-2'>
-            <div className='w-full h-[200px] flex justify-center'>
-                <img src={project.images[currentImage]} className='object-cover h-[200px] f' />
+            <div className='h-[200px] flex justify-center items-center'>
+                <img src={project.images[currentImage]} className='object-cover h-[200px]' />
             </div>
 
             <div className='p-3'>

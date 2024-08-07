@@ -26,8 +26,8 @@ export default function Project_six() {
     }
     return (
         <div className='flex flex-col p-2'>
-            <div className='w-full h-[200px] flex justify-center'>
-                <img src={project.images[currentImage]} className='object-cover h-[200px] f' />
+            <div className='h-[200px] w-full flex items-center justify-center'>
+                <img src={project.images[currentImage]} className='object-center h-[200px]' />
             </div>
 
             <div className='p-3'>
@@ -46,7 +46,7 @@ export default function Project_six() {
                         <RiArrowLeftSLine className='rounded-full h-6 w-6 border-2 p-1 border-primary text-main focus:ring focus:ring-main active:ring active:ring-main' />
                     </button>
                     <button onClick={handlePrev}>
-                        <RiArrowRightSLine className='rounded-full h-6 w-6 border-2 p-1 border-primary text-main focus:ring focus:ring-main active:ring active:ring-main'/>
+                        <RiArrowRightSLine className='rounded-full h-6 w-6 border-2 p-1 border-primary text-main focus:ring focus:ring-main active:ring active:ring-main' />
                     </button>
                 </div>
             </div>
