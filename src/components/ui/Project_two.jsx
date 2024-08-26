@@ -6,9 +6,9 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 
 const contents = [
     {
-        name: "solar app",
-        link: "www.facebook.com",
-        images: ['/solar1.png', '/solar2.png', '/solar3.png']
+        name: "Foodie Web app",
+        link: "https://foodie-swart-five.vercel.app/",
+        images: ['/foodie1.png', '/foodie2.png', '/foodie3.png']
     },
 ]
 
@@ -27,7 +27,7 @@ export default function Project_two() {
     return (
         <div className='flex flex-col p-2'>
             <div className='w-full h-[200px] flex justify-center items-center'>
-                <img src={project.images[currentImage]} className='object-cover h-[200px]' />
+                <img src={project.images[currentImage]} className='object-center bg-cover h-[200px]' />
             </div>
 
             <div className='p-3'>
@@ -46,7 +46,7 @@ export default function Project_two() {
                         <RiArrowLeftSLine className='rounded-full h-6 w-6 border-2 p-1 border-primary text-main focus:ring focus:ring-main active:ring active:ring-main' />
                     </button>
                     <button onClick={handlePrev}>
-                        <RiArrowRightSLine className='rounded-full h-6 w-6 border-2 p-1 border-primary text-main focus:ring focus:ring-main active:ring active:ring-main'/>
+                        <RiArrowRightSLine className='rounded-full h-6 w-6 border-2 p-1 border-primary text-main focus:ring focus:ring-main active:ring active:ring-main' />
                     </button>
                 </div>
             </div>

@@ -41,9 +41,9 @@ const About = () => {
 
   return (
     <div className='mx-auto lg:px-[200px] container px-4'>
-      <div className='mt-6 mx-auto space-y-3'>
-        <h2 className='text-center text-2xl font-semibold'>
-          About<span className='text-main'> .</span>
+      <div className='mt-6 mx-auto space-y-16'>
+        <h2 className='text-center text-2xl font-semibold '>
+          About<span className='text-main '> .</span>
         </h2>
         <div className='flex max-w-xl mx-auto'>
           <p className='secondary text-center text-pretty'>
@@ -51,7 +51,7 @@ const About = () => {
           </p>
         </div>
 
-        <h2 className='secondary text-center text-xl font-semibold mb-14 mt-14'>
+        <h2 className='secondary text-center text-xl font-semibold  mt-3rem'>
           My Skills <span className='text-main'> .</span>
         </h2>
 
@@ -82,16 +82,16 @@ const About = () => {
           </h2>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center'>
 
-            
+
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className='flex justify-center'>
+                  <div className='flex justify-center' data-aos="fade-up-right">
                     <AiOutlineHtml5 className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
                   </div>
                 </TooltipTrigger>
                 <TooltipContent>
-                  HTML 5 
+                  HTML 5
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -99,12 +99,12 @@ const About = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className='flex justify-center'>
+                  <div className='flex justify-center' data-aos="fade-up-right">
                     <RiTailwindCssFill className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
                   </div>
                 </TooltipTrigger>
                 <TooltipContent>
-                  Tailwind CSS 
+                  Tailwind CSS
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -112,12 +112,12 @@ const About = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className='flex justify-center'>
+                  <div className='flex justify-center' data-aos="fade-up-right">
                     <DiCss3 className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
                   </div>
                 </TooltipTrigger>
                 <TooltipContent>
-                  CSS 3 
+                  CSS 3
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -125,7 +125,7 @@ const About = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className='flex justify-center'>
+                  <div className='flex justify-center' data-aos="fade-up-right">
                     <SiJavascript className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
                   </div>
                 </TooltipTrigger>
@@ -138,7 +138,7 @@ const About = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className='flex justify-center'>
+                  <div className='flex justify-center' data-aos="fade-up-left">
                     <TbBrandNextjs className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
                   </div>
                 </TooltipTrigger>
@@ -151,8 +151,8 @@ const About = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className='flex justify-center'>
-                    <FaReact  className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
+                  <div className='flex justify-center' data-aos="fade-up-left">
+                    <FaReact className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
                   </div>
                 </TooltipTrigger>
                 <TooltipContent>
@@ -164,7 +164,7 @@ const About = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className='flex justify-center'>
+                  <div className='flex justify-center' data-aos="fade-up-left">
                     <SiRubyonrails className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
                   </div>
                 </TooltipTrigger>
@@ -177,16 +177,16 @@ const About = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <div className='flex justify-center'>
+                  <div className='flex justify-center' data-aos="fade-up-left">
                     <SiExpress className='text-xl text-main p-2 h-20 w-20 border-primary border-2 rounded-full' />
                   </div>
                 </TooltipTrigger>
                 <TooltipContent>
-                  Express.js 
+                  Express.js
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
-           
+
           </div>
         </div>
 

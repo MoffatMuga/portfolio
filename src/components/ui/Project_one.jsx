@@ -27,7 +27,7 @@ export default function Project_one() {
     return (
         <div className='flex flex-col p-2'>
             <div className=' h-[200px] flex w-full items-center justify-center'>
-                <img src={project.images[currentImage]} className='object-cover h-[200px] ' />
+                <img src={project.images[currentImage]} className='bg-cover object-center h-[200px] ' />
             </div>
 
             <div className='p-3'>

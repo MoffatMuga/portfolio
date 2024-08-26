@@ -17,7 +17,7 @@ function projects() {
   })
 
   return (
-    <div className='mx-auto md:px-[200px] flex flex-col md:flex-row container  px-4  mt-6'>
+    <div className='mx-auto md:px-[200px] flex flex-col md:flex-row container  px-4  mt-6 overflow-x-hidden'>
 
       <div className='grid md:grid-cols-3  gap-6 items-center justify-cnter  '>
         <div className='border border-primary flex justify-center ' data-aos="fade-right">
