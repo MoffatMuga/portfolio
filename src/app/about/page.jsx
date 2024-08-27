@@ -40,7 +40,7 @@ const About = () => {
   })
 
   return (
-    <div className='mx-auto lg:px-[200px] container px-4 overflow-x-hidden'>
+    <div className='mx-auto lg:px-[200px] container px-4 overflow-hidden'>
       <div className='mt-6 mx-auto space-y-16'>
         <h2 className='text-center text-2xl font-semibold '>
           About<span className='text-main '> .</span>
